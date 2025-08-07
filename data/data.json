@@ -1,0 +1,115 @@
+{
+  "artists": [
+    {
+      "id": "a1",
+      "name": "Burna Boy",
+      "rank": 1,
+      "genre": "Afro-fusion",
+      "bio": "Burna Boy is a Grammy-winning Nigerian artist known for blending Afrobeats, dancehall, and reggae.",
+      "image": "https://link-to-burna-image.jpg"
+    },
+    {
+      "id": "a2",
+      "name": "Tems",
+      "rank": 2,
+      "genre": "Alté / R&B",
+      "bio": "Tems is a Nigerian singer-songwriter and record producer recognized for her soulful voice.",
+      "image": "https://link-to-tems-image.jpg"
+    },
+    {
+      "id": "a3",
+      "name": "Wizkid",
+      "rank": 3,
+      "genre": "Afrobeats",
+      "bio": "Wizkid is one of the pioneers of modern Afrobeats, known for global hits like 'Essence'.",
+      "image": "https://link-to-wizkid-image.jpg"
+    }
+  ],
+
+  "albums": [
+    {
+      "id": "alb1",
+      "title": "Love, Damini",
+      "artistId": "a1",
+      "releaseYear": 2022,
+      "cover": "https://link-to-album-cover.jpg"
+    },
+    {
+      "id": "alb2",
+      "title": "For Broken Ears",
+      "artistId": "a2",
+      "releaseYear": 2020,
+      "cover": "https://link-to-tems-album.jpg"
+    },
+    {
+      "id": "alb3",
+      "title": "Made in Lagos",
+      "artistId": "a3",
+      "releaseYear": 2020,
+      "cover": "https://link-to-wizkid-album.jpg"
+    }
+  ],
+
+  "tracks": [
+    {
+      "id": "t1",
+      "title": "Last Last",
+      "artistId": "a1",
+      "albumId": "alb1",
+      "spotifyId": "3GZoWzRkP2mB8Br1hxv5ID",
+      "youtubeId": "uXkRAuYyYy0",
+      "duration": "2:52"
+    },
+    {
+      "id": "t2",
+      "title": "Free Mind",
+      "artistId": "a2",
+      "albumId": "alb2",
+      "spotifyId": "5uEYRdEIh9Bo4fpjDd4Na9",
+      "youtubeId": "4lHsh7Q3UR8",
+      "duration": "3:41"
+    },
+    {
+      "id": "t3",
+      "title": "Essence",
+      "artistId": "a3",
+      "albumId": "alb3",
+      "spotifyId": "3XVBdLihbNbxUwZosxcGuJ",
+      "youtubeId": "tQ0yjYUFKAE",
+      "duration": "4:10"
+    }
+  ],
+
+  "rankings": [
+    {
+      "trackId": "t1",
+      "position": 1,
+      "trend": "rising"
+    },
+    {
+      "trackId": "t3",
+      "position": 2,
+      "trend": "steady"
+    },
+    {
+      "trackId": "t2",
+      "position": 3,
+      "trend": "new"
+    }
+  ],
+
+  "genres": [
+    "Afrobeats",
+    "Afro-fusion",
+    "Alté",
+    "Afro-pop",
+    "Dancehall"
+  ],
+
+  "moods": [
+    "Chill",
+    "Party",
+    "Romantic",
+    "Energetic"
+  ]
+}
