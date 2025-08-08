@@ -1,33 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Discover trending Afrobeats music, artists, and playlists all in one hub." />
-  <title>Afrobeats Discovery Hub</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Discover trending Afrobeats music, artists, videos, and lyrics in one place. Your ultimate hub for African music culture.">
+  <meta name="keywords" content="afrobeats, african music, afropop, afrofusion, african artists">
+  <title>Afrobeats Discovery Hub | Explore African Music</title>
   <link rel="stylesheet" href="styles/styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@600&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
-  <header>
-  <h1>Welcome to Afrobeats Discovery Hub</h1>
+  <div class="app-container">
+    <!-- Header with Navigation -->
+    <header class="main-header">
+      <div class="header-container">
+        <div class="logo-container">
+          <img src="assets/icons/logo.svg" alt="Afrobeats Discovery Hub Logo" class="logo">
+          <h1 class="logo-text">Afrobeats<span>Discovery</span></h1>
+        </div>
 
-  <nav>
-    <ul>
-      <li><a href="artist/artist.html">Artist Page</a></li>
-      <li><a href="playlist/playlist.html">Playlist Page</a></li>
-      <li><a href="login/login.html">Login Page</a></li>
-    </ul>
-  </nav>
-  </header>
-    <main id="app">
-    <!-- Dnamic content injected here -->
-  </main>
-  <footer>
-    <p>&copy; 2025 Afrobeats Discovery Hub. All rights reserved.</p>
-  </footer>
+        <nav class="main-nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+            <li class="nav-item"><a href="artist/artist.html" class="nav-link">Artists</a></li>
+            <li class="nav-item"><a href="playlist/playlist.html" class="nav-link">Playlists</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Genres</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Trending</a></li>
+          </ul>
+        </nav>
 
+        <div class="user-actions">
+          <button class="search-btn" aria-label="Search">
+            <img src="assets/icons/search.svg" alt="Search">
+          </button>
+          <a href="login/login.html" class="login-btn">Sign In</a>
+        </div>
+
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="hero-content">
+          <h2 class="hero-title">Discover the Pulse of African Music</h2>
+          <p class="hero-subtitle">Explore trending Afrobeats, Afro-fusion, and more in one vibrant hub</p>
+          <div class="search-bar">
+            <input type="text" placeholder="Search artists, songs, or albums..." class="search-input">
+            <button class="search-submit">Search</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Content Sections -->
+      <section class="content-section">
+        <div class="section-header">
+          <h2 class="section-title">New Releases</h2>
+          <a href="#" class="view-all">View All</a>
+        </div>
+        <div class="carousel new-releases-carousel">
+          <!-- Dynamic content will be injected here by JavaScript -->
+          <div class="carousel-placeholder">
+            <p>Loading new releases...</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="section-header">
+          <h2 class="section-title">Trending Now</h2>
+          <a href="#" class="view-all">View All</a>
+        </div>
+        <div class="carousel trending-carousel">
+          <!-- Dynamic content will be injected here by JavaScript -->
+          <div class="carousel-placeholder">
+            <p>Loading trending tracks...</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="section-header">
+          <h2 class="section-title">Featured Artists</h2>
+          <a href="artist/artist.html" class="view-all">View All</a>
+        </div>
+        <div class="artists-grid">
+          <!-- Dynamic content will be injected here by JavaScript -->
+          <div class="grid-placeholder">
+            <p>Loading featured artists...</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mood-section">
+        <h2 class="section-title">Browse by Mood</h2>
+        <div class="mood-grid">
+          <a href="#" class="mood-card" style="background-color: #FF5722;">
+            <h3>Party</h3>
+          </a>
+          <a href="#" class="mood-card" style="background-color: #FFC107;">
+            <h3>Chill</h3>
+          </a>
+          <a href="#" class="mood-card" style="background-color: #1976D2;">
+            <h3>Workout</h3>
+          </a>
+          <a href="#" class="mood-card" style="background-color: #4CAF50;">
+            <h3>Romantic</h3>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <div class="logo-container">
+            <img src="assets/icons/logo-white.svg" alt="Afrobeats Discovery Hub Logo" class="logo">
+            <h2 class="logo-text">Afrobeats<span>Discovery</span></h2>
+          </div>
+          <p class="footer-description">Your ultimate hub for discovering and exploring African music culture.</p>
+        </div>
+
+        <div class="footer-links">
+          <div class="links-column">
+            <h3 class="links-title">Explore</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="artist/artist.html">Artists</a></li>
+              <li><a href="playlist/playlist.html">Playlists</a></li>
+              <li><a href="#">Genres</a></li>
+            </ul>
+          </div>
+
+          <div class="links-column">
+            <h3 class="links-title">Company</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+
+          <div class="links-column">
+            <h3 class="links-title">Legal</h3>
+            <ul>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Cookies</a></li>
+              <li><a href="#">Licenses</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-social">
+          <h3 class="social-title">Connect With Us</h3>
+          <div class="social-icons">
+            <a href="#" aria-label="Twitter"><img src="assets/icons/twitter.svg" alt="Twitter"></a>
+            <a href="#" aria-label="Instagram"><img src="assets/icons/instagram.svg" alt="Instagram"></a>
+            <a href="#" aria-label="Facebook"><img src="assets/icons/facebook.svg" alt="Facebook"></a>
+            <a href="#" aria-label="YouTube"><img src="assets/icons/youtube.svg" alt="YouTube"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Afrobeats Discovery Hub. All rights reserved.</p>
+        <p>Powered by Spotify, YouTube, and Genius APIs</p>
+      </div>
+    </footer>
+  </div>
 
   <script src="scripts/main.js"></script>
 </body>
+
 </html>

@@ -2,24 +2,260 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Artist Page</title>
-    <link rel="stylesheet" href="../styles/styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Discover the complete discography, videos, and biography of your favorite Afrobeats artist">
+    <title>Artist Name | Afrobeats Discovery Hub</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="../assets/icons/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <h1>Artist Page</h1>
+    <div class="app-container">
+        <!-- Header (consistent with index.html) -->
+        <header class="main-header">
+            <div class="header-container">
+                <div class="logo-container">
+                    <a href="../index.html">
+                        <img src="../assets/icons/logo.svg" alt="Afrobeats Discovery Hub Logo" class="logo">
+                        <h1 class="logo-text">Afrobeats<span>Discovery</span></h1>
+                    </a>
+                </div>
 
-    <nav>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../playlist/playlist.html">Playlist</a></li>
-            <li><a href="../login/login.html">Login</a></li>
-        </ul>
-    </nav>
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="artist.html" class="nav-link active">Artists</a></li>
+                        <li class="nav-item"><a href="../playlist/playlist.html" class="nav-link">Playlists</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Genres</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Trending</a></li>
+                    </ul>
+                </nav>
 
-    <script src="../scripts/component/artistPage.js"></script>
+                <div class="user-actions">
+                    <button class="search-btn" aria-label="Search">
+                        <img src="../assets/icons/search.svg" alt="Search">
+                    </button>
+                    <a href="../login/login.html" class="login-btn">Sign In</a>
+                </div>
+
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Artist Main Content -->
+        <main class="artist-main">
+            <!-- Artist Header Section -->
+            <section class="artist-header">
+                <div class="artist-header-content">
+                    <div class="artist-image-container">
+                        <img src="../assets/images/artist-placeholder.jpg" alt="Artist Name" class="artist-image">
+                        <div class="artist-verification">
+                            <img src="../assets/icons/verified.svg" alt="Verified Artist">
+                        </div>
+                    </div>
+
+                    <div class="artist-info">
+                        <h1 class="artist-name">Artist Name</h1>
+                        <p class="artist-genre">Afrobeats • Afro-fusion • Highlife</p>
+                        <div class="artist-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">4.8M</span>
+                                <span class="stat-label">Monthly Listeners</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">1.2M</span>
+                                <span class="stat-label">Followers</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">12</span>
+                                <span class="stat-label">Tracks</span>
+                            </div>
+                        </div>
+
+                        <div class="artist-actions">
+                            <button class="btn-primary">
+                                <img src="../assets/icons/play.svg" alt="Play">
+                                Play
+                            </button>
+                            <button class="btn-secondary">
+                                <img src="../assets/icons/follow.svg" alt="Follow">
+                                Follow
+                            </button>
+                            <button class="btn-icon" aria-label="More options">
+                                <img src="../assets/icons/more.svg" alt="More">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Artist Navigation -->
+            <nav class="artist-nav">
+                <ul class="artist-nav-list">
+                    <li class="artist-nav-item active"><a href="#overview">Overview</a></li>
+                    <li class="artist-nav-item"><a href="#discography">Discography</a></li>
+                    <li class="artist-nav-item"><a href="#videos">Videos</a></li>
+                    <li class="artist-nav-item"><a href="#about">About</a></li>
+                    <li class="artist-nav-item"><a href="#related">Related</a></li>
+                </ul>
+            </nav>
+
+            <!-- Artist Content Sections -->
+            <section id="overview" class="artist-section">
+                <h2 class="section-title">Popular</h2>
+                <div class="popular-tracks">
+                    <!-- Track items will be dynamically inserted here -->
+                    <div class="track-item">
+                        <div class="track-number">1</div>
+                        <div class="track-info">
+                            <h3 class="track-title">Hit Song Name</h3>
+                            <p class="track-album">Album Name • 2023</p>
+                        </div>
+                        <div class="track-duration">3:45</div>
+                        <button class="track-play" aria-label="Play track">
+                            <img src="../assets/icons/play.svg" alt="Play">
+                        </button>
+                    </div>
+                    <!-- More track items... -->
+                </div>
+
+                <div class="section-divider"></div>
+
+                <h2 class="section-title">Latest Release</h2>
+                <div class="latest-release">
+                    <div class="album-card">
+                        <img src="../assets/images/album-placeholder.jpg" alt="Album Name" class="album-cover">
+                        <div class="album-info">
+                            <h3 class="album-title">Album Name</h3>
+                            <p class="album-meta">Album • 2023 • 12 songs</p>
+                            <div class="album-actions">
+                                <button class="btn-primary btn-sm">
+                                    <img src="../assets/icons/play.svg" alt="Play">
+                                    Play Album
+                                </button>
+                                <button class="btn-secondary btn-sm">
+                                    <img src="../assets/icons/add.svg" alt="Add">
+                                    Add to Library
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="discography" class="artist-section">
+                <h2 class="section-title">Discography</h2>
+                <div class="discography-tabs">
+                    <button class="tab-btn active">Albums</button>
+                    <button class="tab-btn">Singles and EPs</button>
+                    <button class="tab-btn">Compilations</button>
+                    <button class="tab-btn">Features</button>
+                </div>
+
+                <div class="discography-grid">
+                    <!-- Album cards will be dynamically inserted here -->
+                    <div class="album-card-sm">
+                        <img src="../assets/images/album-placeholder.jpg" alt="Album Name" class="album-cover-sm">
+                        <h3 class="album-title-sm">Album Name</h3>
+                        <p class="album-year">2023</p>
+                    </div>
+                    <!-- More album cards... -->
+                </div>
+            </section>
+
+            <section id="videos" class="artist-section">
+                <h2 class="section-title">Videos</h2>
+                <div class="videos-grid">
+                    <!-- Video cards will be dynamically inserted here -->
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <img src="../assets/images/video-placeholder.jpg" alt="Video Title">
+                            <div class="video-duration">4:32</div>
+                            <button class="video-play" aria-label="Play video">
+                                <img src="../assets/icons/play.svg" alt="Play">
+                            </button>
+                        </div>
+                        <h3 class="video-title">Official Music Video</h3>
+                        <p class="video-views">12M views • 3 months ago</p>
+                    </div>
+                    <!-- More video cards... -->
+                </div>
+            </section>
+
+            <section id="about" class="artist-section">
+                <h2 class="section-title">About</h2>
+                <div class="about-content">
+                    <p class="artist-bio">
+                        Artist Name is a Nigerian Afrobeats singer, songwriter, and performer who has taken the global
+                        music scene by storm. Born in Lagos, Nigeria, the artist began their musical journey at a young
+                        age, blending traditional African rhythms with contemporary sounds to create a unique style that
+                        resonates with audiences worldwide.
+                        <br><br>
+                        With multiple chart-topping hits and collaborations with international stars, Artist Name has
+                        become one of the most influential voices in modern African music. Their 2023 album "Album Name"
+                        debuted at #1 in 15 countries and has been streamed over 500 million times globally.
+                    </p>
+
+                    <div class="artist-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Real Name:</span>
+                            <span class="detail-value">Artist Real Name</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Born:</span>
+                            <span class="detail-value">January 1, 1990 (Age 33)</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Origin:</span>
+                            <span class="detail-value">Lagos, Nigeria</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Genres:</span>
+                            <span class="detail-value">Afrobeats, Afro-fusion, Highlife</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Labels:</span>
+                            <span class="detail-value">Universal Music Africa, Artist Owned Label</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="related" class="artist-section">
+                <h2 class="section-title">Fans Also Like</h2>
+                <div class="related-artists">
+                    <!-- Related artist cards will be dynamically inserted here -->
+                    <div class="related-artist-card">
+                        <img src="../assets/images/artist-placeholder.jpg" alt="Related Artist"
+                            class="related-artist-image">
+                        <h3 class="related-artist-name">Related Artist</h3>
+                        <p class="related-artist-genre">Afrobeats</p>
+                    </div>
+                    <!-- More related artist cards... -->
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer (consistent with index.html) -->
+        <footer class="main-footer">
+            <!-- Same footer content as index.html -->
+        </footer>
+    </div>
+
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/services/spotifyService.js"></script>
+    <script src="../scripts/services/youtubeService.js"></script>
 </body>
 
 </html>
