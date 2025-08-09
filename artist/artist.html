@@ -177,20 +177,9 @@
             <section id="videos" class="artist-section">
                 <h2 class="section-title">Videos</h2>
                 <div class="videos-grid">
-                    <!-- Video cards will be dynamically inserted here -->
-                    <div class="video-card">
-                        <div class="video-thumbnail">
-                            <img src="../assets/images/video-placeholder.jpg" alt="Video Title">
-                            <div class="video-duration">4:32</div>
-                            <button class="video-play" aria-label="Play video">
-                                <img src="../assets/icons/play.svg" alt="Play">
-                            </button>
-                        </div>
-                        <h3 class="video-title">Official Music Video</h3>
-                        <p class="video-views">12M views • 3 months ago</p>
-                    </div>
-                    <!-- More video cards... -->
+                    <!-- Videos will be inserted here by JavaScript -->
                 </div>
+                <div id="video-player" style="margin-top: 20px;"></div>
             </section>
 
             <section id="about" class="artist-section">
@@ -253,9 +242,8 @@
         </footer>
     </div>
 
-    <script src="../scripts/main.js"></script>
-    <script src="../scripts/services/spotifyService.js"></script>
-    <script src="../scripts/services/youtubeService.js"></script>
+
+    <script type="module" src="/scripts/component/artistPage.js"></script>
 </body>
 
 </html>
